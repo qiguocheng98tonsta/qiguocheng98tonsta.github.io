@@ -1,0 +1,147 @@
+export const siteContent = {
+  site: {
+    title: '河边上马',
+    brandName: '乐石琪牧场',
+    subtitle: '在河畔草地，慢下来学习和马相处。',
+    description:
+      '乐石琪牧场提供河边骑行、亲子体验、团队活动和基础马术指导，适合第一次接触马匹的朋友安心参与。',
+    phone: '请补充联系电话',
+    wechatLabel: '乐石琪牧场微信咨询',
+    wechatQr: './assets/qrcode/wechat-qr.png',
+    address: '请补充牧场详细地址',
+    businessHours: '周二至周日 09:00-18:00',
+    navigationUrl: 'https://maps.example.test/ranch',
+    copyright: '© 2026 乐石琪牧场',
+  },
+  hero: {
+    title: '河边上马',
+    brandName: '乐石琪牧场',
+    subtitle: '沿着河风和草香，开启一次轻松、安全、亲近自然的骑马体验。',
+    mediaType: 'image',
+    mediaSrc: './assets/media/hero/riverside-hero.jpg',
+    fallbackImages: [
+      './assets/media/hero/riverside-hero-fallback-1.jpg',
+      './assets/media/hero/riverside-hero-fallback-2.jpg',
+    ],
+    actions: [
+      {
+        label: '查看日常活动',
+        href: '#/projects',
+        variant: 'primary',
+      },
+      {
+        label: '留言咨询',
+        href: '#/contact',
+        variant: 'ghost',
+      },
+    ],
+  },
+  homeChapters: [
+    {
+      id: 'riverside',
+      eyebrow: '河边路线',
+      title: '顺着水岸慢骑',
+      summary: '从牵马熟悉开始，沿河边步道体验自然节奏，适合初学者和家庭同行。',
+      mediaSrc: './assets/media/chapters/riverside.jpg',
+      href: '#/projects',
+      actionLabel: '了解河边骑行',
+    },
+    {
+      id: 'activities',
+      eyebrow: '日常活动',
+      title: '亲子与朋友都能参与',
+      summary: '提供喂马、刷马、合影、短途骑乘等轻量活动，让体验更放松。',
+      mediaSrc: './assets/media/chapters/activities.jpg',
+      href: '#/media',
+      actionLabel: '浏览活动照片',
+    },
+    {
+      id: 'team',
+      eyebrow: '师资团队',
+      title: '教练全程陪同',
+      summary: '教练会根据年龄、经验和天气情况调整节奏，帮助大家安心上马。',
+      mediaSrc: './assets/media/chapters/team.jpg',
+      href: '#/team',
+      actionLabel: '认识教练',
+    },
+  ],
+  projects: [
+    {
+      id: 'riverside-ride',
+      title: '河边野骑',
+      summary: '适合第一次来牧场的朋友，从基础安全说明到河边慢骑，全程有教练照看。',
+      audience: '成人、情侣、朋友结伴',
+      cover: './assets/media/gallery/riverside-ride.jpg',
+      featured: true,
+    },
+    {
+      id: 'family',
+      title: '亲子牧场活动',
+      summary: '包含认识马匹、刷马喂马、牵行体验和亲子合影，节奏轻松。',
+      audience: '亲子家庭、儿童体验',
+      cover: './assets/media/gallery/family.jpg',
+      featured: true,
+    },
+    {
+      id: 'team-event',
+      title: '团队定制活动',
+      summary: '为小型团队、团建和朋友聚会安排骑乘体验、互动任务和休息区使用。',
+      audience: '企业团队、社群活动、朋友聚会',
+      cover: './assets/media/gallery/team-event.jpg',
+      featured: false,
+    },
+  ],
+  safetySteps: [
+    {
+      title: '装备佩戴',
+      text: '上马前确认头盔、护具和鞋服状态，减少不必要风险。',
+    },
+    {
+      title: '新手指导',
+      text: '教练讲解接近马匹、上下马、握缰和保持平衡的基本动作。',
+    },
+    {
+      title: '教练陪同',
+      text: '体验过程中教练在旁观察和引导，按参与者状态调整路线。',
+    },
+    {
+      title: '天气调整',
+      text: '遇到强风、降雨、高温等情况时，活动会改期或调整为场内体验。',
+    },
+  ],
+  media: [
+    {
+      id: 'venue',
+      category: '场地环境',
+      title: '河畔草场',
+      src: './assets/media/gallery/pasture.jpg',
+      cover: './assets/media/gallery/pasture.jpg',
+      type: 'image',
+    },
+    {
+      id: 'route',
+      category: '河边路线',
+      title: '水岸慢骑',
+      src: './assets/media/gallery/riverside-route.jpg',
+      cover: './assets/media/gallery/riverside-route.jpg',
+      type: 'image',
+    },
+    {
+      id: 'activity',
+      category: '日常活动',
+      title: '亲子刷马',
+      src: './assets/media/gallery/daily-activity.jpg',
+      cover: './assets/media/gallery/daily-activity.jpg',
+      type: 'image',
+    },
+  ],
+  coaches: [
+    {
+      id: 'lead-coach',
+      name: '牧场主教练',
+      role: '基础骑乘与新手体验指导',
+      bio: '长期负责新手接待、河边路线陪同和亲子活动安全说明。',
+      avatar: './assets/media/team/lead-coach.jpg',
+    },
+  ],
+};

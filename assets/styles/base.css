@@ -1,0 +1,112 @@
+:root {
+  --color-ink: #18211d;
+  --color-muted: #68736b;
+  --color-forest: #193c2d;
+  --color-forest-deep: #10281e;
+  --color-grass: #4f7d45;
+  --color-cream: #f7f1e6;
+  --color-paper: #fffaf0;
+  --color-gold: #b68a4b;
+  --color-gold-dark: #8d6533;
+  --color-line: rgba(24, 33, 29, 0.16);
+  --color-line-strong: rgba(24, 33, 29, 0.28);
+  --shadow-soft: 0 24px 54px rgba(20, 32, 24, 0.14);
+  --shadow-subtle: 0 12px 28px rgba(20, 32, 24, 0.08);
+  --font-sans: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
+  --font-serif: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --max-width: 1180px;
+  --header-height: 76px;
+  --radius-small: 10px;
+  --radius-medium: 16px;
+  --space-section: clamp(64px, 7vw, 88px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-ink);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin-top: 0;
+}
+
+::selection {
+  background: rgba(182, 138, 75, 0.28);
+}
+
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: -56px;
+  z-index: 100;
+  padding: 10px 14px;
+  color: var(--color-paper);
+  background: var(--color-ink);
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow-subtle);
+  transition: top 160ms ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}

@@ -5,12 +5,14 @@ export const siteContent = {
     subtitle: '在河畔草地，慢下来学习和马相处。',
     description:
       '乐石琪牧场提供河边骑行、亲子体验、团队活动和基础马术指导，适合第一次接触马匹的朋友安心参与。',
-    phone: '请补充联系电话',
-    wechatLabel: '乐石琪牧场微信咨询',
+    phone: '',
+    wechatLabel: '',
     wechatQr: './assets/qrcode/wechat-qr.png',
-    address: '请补充牧场详细地址',
-    businessHours: '周二至周日 09:00-18:00',
-    navigationUrl: 'https://maps.example.test/ranch',
+    email: 'hebianshangma@163.com',
+    address: '新津区兴义镇田渡村11组89号',
+    businessHours: '周一至周日 10:00–21:00',
+    navigationUrl: 'https://surl.amap.com/liQQlgGhcOa',
+    contactFormEnabled: false,
     copyright: '© 2026 乐石琪牧场',
   },
   hero: {
@@ -145,3 +147,4 @@ export const siteContent = {
     },
   ],
 };
+

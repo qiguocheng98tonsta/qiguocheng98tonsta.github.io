@@ -50,7 +50,12 @@ function ContactPreview({ site }) {
     { label: '场地位置', value: site.address },
     { label: '电话咨询', value: site.phone },
     { label: '微信咨询', value: site.wechatLabel },
-  ];
+    {
+      label: '邮箱咨询',
+      value: site.email,
+      href: site.email ? `mailto:${site.email}` : '',
+    },
+  ].filter((feature) => String(feature.value ?? '').trim());
 
   return `<section class="chapter-section contact-preview">
     <div class="chapter-inner">
@@ -61,7 +66,9 @@ function ContactPreview({ site }) {
       <div class="feature-grid">
         ${list(features, (feature) => `<article class="feature-card">
           <h3>${escapeHtml(feature.label)}</h3>
-          <p class="feature-value">${escapeHtml(feature.value)}</p>
+          ${feature.href
+    ? `<a class="feature-value" href="${escapeHtml(feature.href)}">${escapeHtml(feature.value)}</a>`
+    : `<p class="feature-value">${escapeHtml(feature.value)}</p>`}
         </article>`)}
       </div>
       <div class="action-row">
@@ -79,3 +86,4 @@ export function HomePage(content) {
     ${ContactPreview({ site: content.site })}
   </main>`;
 }
+

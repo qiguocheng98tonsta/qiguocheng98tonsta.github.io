@@ -71,8 +71,19 @@
   }
 
   .process-grid,
-  .feature-grid {
+  .feature-grid,
+  .package-grid,
+  .riverside-project {
     grid-template-columns: 1fr;
+  }
+
+  .riverside-project-cover {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .riverside-project-copy {
+    padding: 0 20px 22px;
   }
 }
 
@@ -173,8 +184,17 @@
   }
 
   .process-step,
-  .feature-card {
+  .feature-card,
+  .package-card {
     padding: 18px;
+  }
+
+  .riverside-project {
+    padding: 0;
+  }
+
+  .riverside-project-copy {
+    padding: 0 18px 20px;
   }
 
   .site-footer-inner {
